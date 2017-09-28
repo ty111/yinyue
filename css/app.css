@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+#box{
+    background: url("../images/appbg.jpg");
+    background-position:52.5% -20%;
+    width:100%;
+    height:700px;
+}
+#box1{
+    width:280px;
+    height:486px;
+    background:#CCC;
+    position:absolute;
+    top:17.5%;
+    left:45.5%;
+    overflow:hidden;
+}
+#box2{
+    width:280px;
+    height:486px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#box2 img{
+    width:280px;
+    height:486px;
+}
+.erweima1{
+    /*background: navajowhite;*/
+    float: left;
+    position:relative;
+    top:50%;
+    left:15%;
+}
+.erweima2{
+    /*background: navajowhite;*/
+    float:left;
+    position:relative;
+    top:50%;
+    left:18%;
+}
+h2{
+    color:#31b0d5;
+}

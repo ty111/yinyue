@@ -1,0 +1,171 @@
+.start{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    background: white;
+}
+#header{
+    margin:3px 0;
+    border-bottom: 1px solid #B2D0EA;
+}
+#header div{
+    height: 24px;
+}
+#header span{
+    padding:0 7px ;
+    color:#B2D0EA;
+}
+#header img{
+    margin:0 2px;
+}
+
+.header2aright{
+
+    font-size:12px;
+    margin-top: 22px;
+}
+.header2aright a{
+    margin-right:10px;
+    color:#122b40;
+}
+.header2aright strong{
+    margin-right:10px;
+    color:#31b0d5;
+}
+#nav{
+    border-radius: 10px 10px 0 0;
+
+}
+#nav1 li{
+    padding:0 15px;
+}
+#nav1 a{
+    color: whitesmoke;
+}
+#nav1 a:hover{
+    background:#337ab7;
+    border-radius: 10px;
+}
+#nav2,#nav2 a{
+    color: #bce8f1;
+    font-size:12px;
+}
+#nav2 a{
+    margin:0 10px;
+}
+#nav2 a:hover{
+    color:snow;
+}
+#nav2 button{
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+#navsinger,#navsinger a{
+    color:#999999;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 0 10px 10px;
+}
+#navsinger span{
+    margin:0 10px;
+}
+#navsinger .navsingerorange a,.navsingerorange a:hover{
+    color:#FF6600;
+    margin:0 5px;
+}
+/*ÄÚÈÝ*/
+#box1{
+    width:900px;
+    height:350px;
+    /*background:#CCC;*/
+    position:absolute;
+    top:0;
+    left:10%;
+    overflow:hidden;
+}
+#box2{
+    width:700px;
+    height:350px;
+    position: absolute;
+    top:0;
+    left:100px;
+}
+#box2 img{
+    width:700px;
+    height:350px;
+    float:left;
+}
+#firstdiv{
+    width:100px;
+    height:350px;
+    opacity: 0.6;
+    float:left;
+    position:relative;
+    background: black;
+    left:9%;
+    top:0;
+    z-index: 1;
+}
+#lastdiv{
+    width:100px;
+    height:350px;
+    opacity: 0.6;
+    float:left;
+    position:relative;
+    background: black;
+    left:70.8%;
+    top:1px;
+    z-index: 1;
+}
+.vessel{
+    width:228px;
+    margin:10px auto 0 auto;
+    padding:0;
+    box-shadow:3px 3px 1px #d4d4d4;
+    /*border:1px solid black;*/
+}
+.vessel>div{
+    background: #d4d4d4;
+    margin-top:-10px;
+}
+.vessel div h4{
+    margin-bottom: 0;
+}
+.vessel div h4 a{
+    font-weight: bold;
+    color:#1b6d85;
+}
+.vessel p{
+    color:snow;
+    margin:0;
+    padding:0;
+}
+.vessel p span{
+    float: right;
+}
+.pa{
+    color:dimgray;
+}
+.vessel>img{
+    width:228px;
+    height: 137px;
+}
+.footer{
+    margin-top: 10px;
+}
+.footer a,.footer small {
+    color: #666666;
+}
+.footer span{
+    margin:0 10px;
+}
+.footer p{
+    margin-top: 5px;
+}
+#company{
+    color:#31b0d5;
+    font-weight: bold;
+}

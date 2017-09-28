@@ -1,0 +1,157 @@
+.start{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    background: white;
+}
+#header{
+    margin:3px 0;
+    border-bottom: 1px solid #B2D0EA;
+}
+#header div{
+    height: 24px;
+}
+#header span{
+    padding:0 7px ;
+    color:#B2D0EA;
+}
+#header img{
+    margin:0 2px;
+}
+
+.header2aright{
+
+    font-size:12px;
+    margin-top: 22px;
+}
+.header2aright a{
+    margin-right:10px;
+    color:#122b40;
+}
+.header2aright strong{
+    margin-right:10px;
+    color:#31b0d5;
+}
+#nav{
+    border-radius: 10px 10px 0 0;
+
+}
+#nav1 li{
+    padding:0 15px;
+}
+#nav1 a{
+    color: whitesmoke;
+}
+#nav1 a:hover{
+    background:#337ab7;
+    border-radius: 10px;
+}
+#nav2,#nav2 a{
+    color: #bce8f1;
+    font-size:12px;
+}
+#nav2 a{
+    margin:0 10px;
+}
+#nav2 a:hover{
+    color:snow;
+}
+#nav2 button{
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+#navsinger,#navsinger a{
+    color:#999999;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 0 10px 10px;
+}
+#navsinger span{
+    margin:0 10px;
+}
+#navsinger .navsingerorange a,.navsingerorange a:hover{
+    color:#FF6600;
+    margin:0 5px;
+}
+/*ÄÚÈÝ*/
+.contentleft{
+    /*background: cornsilk;*/
+    border-right:1px solid #EFF9FE;
+    border-bottom:1px solid #EFF9FE;
+}
+.contentleft h4{
+    font-weight: bold;
+}
+.contentleft p{
+    background: #EFF9FE;
+    height: 30px;
+    line-height: 30px;
+}
+.contentleft p a{
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contentleft ul{
+    list-style: none;
+    margin-left:-20px;
+    font-size: 12px;
+}
+.contentleft ul li{
+    height: 25px;
+    line-height: 25px;
+}
+.contentright .list p{
+    height:30px;
+    line-height: 30px;
+    margin:0;
+}
+.contentright .list p small{
+    color:#888888;
+}
+.contentright .list p small{
+    float:right;
+}
+.contentright .list button{
+    margin-top:10px;
+    margin-left:15px;
+    margin-bottom: 10px;
+}
+.contentright .chbox{
+    height:35px;
+    line-height: 35px;
+    border-bottom: 1px dashed #DBDBDB;
+}
+.contentright .chbox span{
+    display: inline-block;
+    width:15px;
+    margin-left:10px;
+}
+.hang{
+    margin-top:5px;
+}
+.chbox img{
+    float:right;
+    margin-top: 7px;
+    margin-right:5px;
+}
+/**/
+.footer{
+    margin-top: 10px;
+}
+.footer a,.footer small {
+    color: #666666;
+}
+.footer span{
+    margin:0 10px;
+}
+.footer p{
+    margin-top: 5px;
+}
+#company{
+    color:#31b0d5;
+    font-weight: bold;
+}

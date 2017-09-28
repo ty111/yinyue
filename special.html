@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>专辑</title>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/special.css"/>
+
+</head>
+<body>
+    <div class="container box">
+        <!--<div class="row">-->
+            <!--<div class="col-md-1 start" style="background: chartreuse">1</div>-->
+            <!--<div class="col-md-1 start" style="background: salmon">2</div>-->
+            <!--<div class="col-md-1 start" style="background: wheat">3</div>-->
+            <!--<div class="col-md-1 start" style="background: paleturquoise">4</div>-->
+            <!--<div class="col-md-1 start" style="background: khaki">5</div>-->
+            <!--<div class="col-md-1 start" style="background: blueviolet">6</div>-->
+            <!--<div class="col-md-1 start" style="background: rosybrown">7</div>-->
+            <!--<div class="col-md-1 start" style="background: lightcoral">8</div>-->
+            <!--<div class="col-md-1 start" style="background: cyan">9</div>-->
+            <!--<div class="col-md-1 start" style="background: mediumblue">10</div>-->
+            <!--<div class="col-md-1 start" style="background: lawngreen">11</div>-->
+            <!--<div class="col-md-1 start" style="background: violet">12</div>-->
+        <!--</div>-->
+        <div class="row" id="header">
+            <div class="col-md-3 start" style="">
+                <small>保存到桌面<span>|</span>曲风<span>|</span>排行榜<span>|</span>专辑库<span>|</span>娱乐</small>
+            </div>
+            <div class="col-md-3" style="">
+                <img style="padding-left: 35px;" src="images/header-share.JPG"/><small>分享到</small>
+                <img src="images/header-zhihu.jpg"/>
+                <img src="images/header-xinlang.jpg"/>
+                <img src="images/header-qq.jpg"/>
+                <img src="images/header-1.JPG"/>
+            </div>
+            <div class="col-md-6 text-right" style="">
+                <img style="" src="images/header-2.jpg"/>
+                <img src="images/header-3.jpg"/>
+                <img src="images/header-4.jpg"/>
+                <img src="images/header-5.jpg"/>
+                <small style="margin:0 10px;">手机版：m.1ting.com</small>
+                <img src="images/header-11.jpg"/>
+                <small style="color: #999;">加入收藏</small>
+            </div>
+        </div>
+        <div class="row" style="">
+            <div class="col-md-2">
+                <img src="images/header-6.jpg"/>
+            </div>
+            <div class="col-md-3 col-md-offset-2" style="">
+                <div class="input-prepend input-append" style="">
+                    <form class=" form-inline " >
+                        <div class="form-group">
+                            <div class="input-group" style="border: 1px solid #5bc0de; border-radius: 5px;margin-top: 15px;">
+                                <div class="input-group-addon" style="margin:0;padding: 0;">
+                                    <select class="add-on  " style="height: 28px;">
+                                        <option><a href="#">全部</a></option>
+                                        <option><a href="#">歌曲</a></option>
+                                        <option><a href="#">专辑</a></option>
+                                        <option><a href="#">歌手</a></option>
+                                        <option><a href="#">歌词</a></option>
+                                    </select>
+                                </div>
+                                <input style="width:300px;" type="text" class="form-control input-sm" placeholder="支持拼音搜索">
+                                <div class="input-group-addon" style="margin:0;padding: 0;">
+                                    <button type="submit" class="btn btn-info btn-sm" style="height:28px;">搜索</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1 text-right header2aright">
+                <p style="">
+                    <span>免费注册-</span>
+                    <strong style="">登录</strong>
+                    <a href="#" >
+                        <img src="images/header-xinlang.jpg"/>
+                        <span >微博登录</span>
+                    </a>
+                    <a href="#">
+                        <img src="images/header-qq.jpg"/>
+                        <span >QQ登录</span>
+                    </a>
+                    <span style="color: #31b0d5;">防诈骗</span>
+                </p>
+            </div>
+        </div>
+        <div class="row" id="nav" style="background: #00A7FF;font-weight: bold;">
+            <div class="col-md-6"  role="navigation">
+                <ul class="nav navbar-nav" id="nav1">
+                    <li  class="active"><a href="home.html" >首页</a></li>
+                    <li id="singer"><a href="singer.html">歌手</a></li>
+                    <li ><a href="#">专辑</a></li>
+                    <li ><a href="ranklist.html">排行版</a></li>
+                    <li id="channal"><a href="#">精选频道</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 " id="nav2">
+                <p class="navbar-text">
+                    <a href="#"  >曲风分类</a>|
+                    <a href="subject.html">专题.活动</a>|
+                    <a href="#">美女主播</a>|
+                    <a href="app.html">一听Apps</a>
+                </p>
+                <button type="button" class="text-right btn btn-info navbar-btn">随便一听</button>
+            </div>
+
+        </div>
+        <div class="row text-center" style="background: #F2F6F8;" id="navsinger">
+            <div id="show1" class="col-md-12 show">
+                <small><a href="#">华语女歌手</a> </small><span>|</span>
+                <small><a href="#">华语男歌手</a></small><span>|</span>
+                <small><a href="#">华语组合</a></small><span>|</span>
+                <small><a href="#">欧美女歌手</a></small><span>|</span>
+                <small><a href="#">欧美男歌手</a></small><span>|</span>
+                <small><a href="#">欧美组合</a></small><span>|</span>
+                <small><a href="#">韩国</a></small><span>|</span>
+                <small><a href="#">日本</a></small><span>|</span>
+                <small><a href="#">影视</a></small><span>|</span>
+                <small><a href="#">其他</a></small><span>|</span>
+                <small class="navsingerorange"><a href="#">佛教音乐</a></small>
+                <small class="navsingerorange"><a href="#">胎教/儿歌</a></small>
+                <small class="navsingerorange"><a href="#">广场舞</a></small>
+                <small class="navsingerorange"><a href="#">戏曲</a></small>
+                <small class="navsingerorange"><a href="#">高清MV</a></small>
+            </div>
+            <div id="show2" class="col-md-12 text-center hidden">
+                <small><a href="#">经典老歌</a> </small><span>|</span>
+                <small><a href="#">古典音乐</a></small><span>|</span>
+                <small><a href="#">佛乐</a></small><span>|</span>
+                <small><a href="#">胎教</a></small><span>|</span>
+                <small><a href="#">广场舞</a></small><span>|</span>
+                <small><a href="#">戏曲</a></small><span>|</span>
+                <small><a href="#">八卦娱乐</a></small><span>|</span>
+                <small><a href="#">高清MV音乐排行榜</a></small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 start contentleft">
+                <h4>排行榜-<span>2016年</span></h4>
+                <p><img src="images/specialdown.png"/>
+                    <a href="#">一听之最</a></p>
+                <ul>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">热门歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">最新歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">独家&首发</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">经典老歌</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">欧美歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">日韩歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">热门专辑</a>
+                    </li>
+                    <li>
+                        <img src="images/specialhover.png"/>
+                        <a href="#" class="check">最新专辑</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">热门歌手</a>
+                    </li>
+                </ul>
+                <p><img src="images/specialdown.png"/>
+                    <a href="#">推荐排行</a></p>
+                <ul>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">情歌对唱</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">电视剧歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">韩国影视歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">Indie流行歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">DJ舞曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">军营歌曲</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">古典音乐</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">民谣、乡村</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">轻音乐</a>
+                    </li>
+                </ul>
+                <p><img src="images/specialdown.png"/>
+                    <a href="#">特别榜单</a></p>
+                <ul>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">摇滚歌曲榜</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">跑步音乐榜</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">篮球音乐榜</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#">台湾百佳唱片</a>
+                    </li>
+                    <li>
+                        <img src="images/specialblue.png"/>
+                        <a href="#" class="check">新媒体流行榜</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-10 start contentright">
+                <!--<div class="row">-->
+                    <!--<div class="col-md-1 start" style="background: chartreuse">1</div>-->
+                    <!--<div class="col-md-1 start" style="background: salmon">2</div>-->
+                    <!--<div class="col-md-1 start" style="background: wheat">3</div>-->
+                    <!--<div class="col-md-1 start" style="background: paleturquoise">4</div>-->
+                    <!--<div class="col-md-1 start" style="background: khaki">5</div>-->
+                    <!--<div class="col-md-1 start" style="background: blueviolet">6</div>-->
+                    <!--<div class="col-md-1 start" style="background: rosybrown">7</div>-->
+                    <!--<div class="col-md-1 start" style="background: lightcoral">8</div>-->
+                    <!--<div class="col-md-1 start" style="background: cyan">9</div>-->
+                    <!--<div class="col-md-1 start" style="background: mediumblue">10</div>-->
+                    <!--<div class="col-md-1 start" style="background: lawngreen">11</div>-->
+                    <!--<div class="col-md-1 start" style="background: violet">12</div>-->
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-4 start text-right" style="">
+                        <ul class="nav  nav-tabs contentrightnav" id="xuanbtn">
+                            <li style="" role="presentation"><a href="#" >全部</a></li>
+                            <li  role="presentation" class="active"><a href="#tab1" data-toggle="tab">华语</a></li>
+                            <li  role="presentation"><a href="#tab2" data-toggle="tab">欧美</a></li>
+                            <li role="presentation"><a href="#tab3" data-toggle="tab">日韩</a></li>
+                            <li role="presentation"><a href="#tab4" data-toggle="tab">其他</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row contentright2" >
+                    <div class="col-md-3 contentrightspecial start">
+                        <button type="button" class="btn btn-default btn-sm">热门专辑</button>
+                        <button type="button" class="btn btn-info btn-sm">最新专辑</button>
+                    </div>
+                    <div class="col-md-7 start text-right">
+                        <form class="form-inline">
+                            <div class="form-group ">
+                                <select>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option selected>2016</option>
+
+                                </select>年
+                                <select >
+                                    <option><a href="#">1</a></option>
+                                    <option><a href="#">2</a></option>
+                                    <option><a href="#">3</a></option>
+                                    <option><a href="#">4</a></option>
+                                    <option><a href="#">5</a></option>
+                                    <option><a href="#">6</a></option>
+                                    <option selected><a href="#">7</a></option>
+                                    <option><a href="#">8</a></option>
+                                    <option><a href="#">9</a></option>
+                                    <option><a href="#">10</a></option>
+                                    <option><a href="#">11</a></option>
+                                    <option><a href="#">12</a></option>
+                                </select>月
+                                <button type="button" class="btn btn-info btn-sm">查看</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- 选项卡内容-->
+                <div class="tab-content" id="xuanxiangka" style=" ">
+                    <div class="tab-pane active" id="tab1">
+                        <div class="col-md-12 start ">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>1.</span><img align="top" src="images/special1.png"/>
+                                    <p align="center" class="specialp1"><a href="#">破茧成蝶(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >申烨</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-26</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>2.</span><img align="top" src="images/special2.png"/>
+                                    <p align="center" class="specialp1"><a href="#">假装哑巴(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >寄悸</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-26</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>3.</span><img align="top" src="images/special3.png"/>
+                                    <p align="center" class="specialp1"><a href="#">孝笑儿女(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >成昊才让</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-26</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>4.</span><img align="top" src="images/special4.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我的家乡美(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >弓宇欣</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-26</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start ">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>5.</span><img align="top" src="images/special5.png"/>
+                                    <p align="center" class="specialp1"><a href="#">爱呀(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >白一凡</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-26</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>6.</span><img align="top" src="images/special6.png"/>
+                                    <p align="center" class="specialp1"><a href="#">808(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >张靓颖</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>7.</span><img align="top" src="images/special7.png"/>
+                                    <p align="center" class="specialp1"><a href="#">金莲的爱(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >海弦月</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>8.</span><img align="top" src="images/special8.png"/>
+                                    <p align="center" class="specialp1"><a href="#">今生感谢你(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >王韵壹</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start ">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div style="">
+                                    <span>9.</span><img align="top" src="images/special9.png"/>
+                                    <p align="center" class="specialp1"><a href="#">亲爱的一起去日喀则(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >热们泽</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div style="" >
+                                    <span>10.</span><img align="top" src="images/special10.png"/>
+                                    <p align="center" class="specialp1"><a href="#">命运(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >二手玫瑰</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>11.</span><img align="top" src="images/special11.png"/>
+                                    <p align="center" class="specialp1"><a href="#">欢歌平江(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >何艺辉</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>12.</span><img align="top" src="images/special12.png"/>
+                                    <p align="center" class="specialp1"><a href="#">云菲菲.今世有缘</a></p>
+                                    <p align="center" class="specialp2"><small >云菲菲</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start ">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div style="">
+                                    <span>13.</span><img align="top" src="images/special13.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我的宝贝(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >沈铎</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div style="" >
+                                    <span>14.</span><img align="top" src="images/special14.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我是山(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >王勇</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>15.</span><img align="top" src="images/special15.png"/>
+                                    <p align="center" class="specialp1"><a href="#">四季童歌(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >徐金慧</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>16.</span><img align="top" src="images/special16.png"/>
+                                    <p align="center" class="specialp1"><a href="#">候鸟的约定(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >庄达菲</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start ">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div style="">
+                                    <span>17.</span><img align="top" src="images/special17.png"/>
+                                    <p align="center" class="specialp1"><a href="#">激流勇进(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >明阳</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div style="" >
+                                    <span>18.</span><img align="top" src="images/special18.png"/>
+                                    <p align="center" class="specialp1"><a href="#">一朵云(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >阿兰</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>19.</span><img align="top" src="images/special19.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我们不会忘记(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >晨曦</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>20.</span><img align="top" src="images/special20.png"/>
+                                    <p align="center" class="specialp1"><a href="#">徒骇河(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >贾增磊</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-25</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start text-center" style="margin-top: 2%;">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default">1</button>
+                                <button type="button" class="btn btn-default">2</button>
+                                <button type="button" class="btn btn-default">3</button>
+                                <button type="button" class="btn btn-default">4</button>
+                                <button type="button" class="btn btn-default">5</button>
+                                <button type="button" class="btn btn-default">6</button>
+                                <button type="button" class="btn btn-default">7</button>
+                                <button type="button" class="btn btn-default">8</button>
+                                <button type="button" class="btn btn-default">9</button>
+                                <button type="button" class="btn btn-default">10</button>
+                            </div>
+                            <div class="btn-group " role="group">
+                                <button type="button" class="btn btn-default">下一页</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <div class="col-md-12 start">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>1.</span><img align="top" src="images/especial1.png"/>
+                                    <p align="center" class="specialp1"><a href="#">Figure(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >Anoraak</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-01</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>2.</span><img align="top" src="images/especial2.png"/>
+                                    <p align="center" class="specialp1"><a href="#">Fallen Angles</a></p>
+                                    <p align="center" class="specialp2"><small >Bob Dylan</small></p>
+                                    <p align="center"><a href="#"><small>2016-05-20</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>3.</span><img align="top" src="images/especial3.png"/>
+                                    <p align="center" class="specialp1"><a href="#">La La La</a></p>
+                                    <p align="center" class="specialp2"><small >Priscilla Ahn</small></p>
+                                    <p align="center"><a href="#"><small>2016-05-12</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>4.</span><img align="top" src="images/especial4.png"/>
+                                    <p align="center" class="specialp1"><a href="#">中国的法国人(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >戴亮</small></p>
+                                    <p align="center"><a href="#"><small>2016-04-20</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>5.</span><img align="top" src="images/especial5.png"/>
+                                    <p align="center" class="specialp1"><a href="#">情非得已(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >弗雷德乐队FLD-5</small></p>
+                                    <p align="center"><a href="#"><small>2016-03-09</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>6.</span><img align="top" src="images/especial6.png"/>
+                                    <p align="center" class="specialp1"><a href="#">向前走(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >弗雷德乐队FLD-5</small></p>
+                                    <p align="center"><a href="#"><small>2016-03-08</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>7.</span><img align="top" src="images/especial7.png"/>
+                                    <p align="center" class="specialp1"><a href="#">All I Need</a></p>
+                                    <p align="center" class="specialp2"><small >Foxes</small></p>
+                                    <p align="center"><a href="#"><small>2016-02-05</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>8.</span><img align="top" src="images/especial8.png"/>
+                                    <p align="center" class="specialp1"><a href="#">Lost In the Pacific</a></p>
+                                    <p align="center" class="specialp2"><small >Sebastian</small></p>
+                                    <p align="center"><a href="#"><small>2016-01-04</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab3">
+                        <div class="col-md-12 start">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>1.</span><img align="top" src="images/hspecial1.png"/>
+                                    <p align="center" class="specialp1"><a href="#">No Doupt(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >VAV</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-21</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>2.</span><img align="top" src="images/hspecial2.png"/>
+                                    <p align="center" class="specialp1"><a href="#">等待你出现(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >小野丽莎</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-18</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>3.</span><img align="top" src="images/hspecial3.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我们的法则</a></p>
+                                    <p align="center" class="specialp2"><small >YB</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-16</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>4.</span><img align="top" src="images/hspecial4.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我讨厌你</a></p>
+                                    <p align="center" class="specialp2"><small >朴灿烈</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-14</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>5.</span><img align="top" src="images/hspecial5.png"/>
+                                    <p align="center" class="specialp1"><a href="#">No Doupt(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >VAV</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-21</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>6.</span><img align="top" src="images/hspecial6.png"/>
+                                    <p align="center" class="specialp1"><a href="#">等待你出现(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >小野丽莎</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-18</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>7.</span><img align="top" src="images/hspecial7.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我们的法则</a></p>
+                                    <p align="center" class="specialp2"><small >YB</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-16</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>8.</span><img align="top" src="images/hspecial8.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我讨厌你</a></p>
+                                    <p align="center" class="specialp2"><small >朴灿烈</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-14</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>9.</span><img align="top" src="images/hspecial9.png"/>
+                                    <p align="center" class="specialp1"><a href="#">No Doupt(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >VAV</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-21</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>10.</span><img align="top" src="images/hspecial10.png"/>
+                                    <p align="center" class="specialp1"><a href="#">等待你出现(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >小野丽莎</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-18</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>11.</span><img align="top" src="images/hspecial11.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我们的法则</a></p>
+                                    <p align="center" class="specialp2"><small >YB</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-16</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>12.</span><img align="top" src="images/hspecial12.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我讨厌你</a></p>
+                                    <p align="center" class="specialp2"><small >朴灿烈</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-14</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 start">
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>13.</span><img align="top" src="images/hspecial13.png"/>
+                                    <p align="center" class="specialp1"><a href="#">No Doupt(EP)</a></p>
+                                    <p align="center" class="specialp2"><small >VAV</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-21</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>14.</span><img align="top" src="images/hspecial14.png"/>
+                                    <p align="center" class="specialp1"><a href="#">等待你出现(单曲)</a></p>
+                                    <p align="center" class="specialp2"><small >小野丽莎</small></p>
+                                    <p align="center"><a href="#"><small>2016-07-18</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>15.</span><img align="top" src="images/hspecial15.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我们的法则</a></p>
+                                    <p align="center" class="specialp2"><small >YB</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-16</small></a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 start newspecial" style="">
+                                <div >
+                                    <span>16.</span><img align="top" src="images/hspecial16.png"/>
+                                    <p align="center" class="specialp1"><a href="#">我讨厌你</a></p>
+                                    <p align="center" class="specialp2"><small >朴灿烈</small></p>
+                                    <p align="center"><a href="#"><small>2016-06-14</small></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab4">4</div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px;border-top: 1px solid #B2D0EA;">
+            <div class="col-md-12 start text-center footer">
+                <a href="#">关于一听</a><span>|</span>
+                <a href="#">版权声明</a><span>|</span>
+                <a href="#">诚聘英才</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">歌曲入库</a><span>|</span>
+                <a href="#">广告服务</a><span>|</span>
+                <a href="#">友情链接</a><span>|</span>
+                <a href="#">历史合作</a><span>|</span>
+                <a href="#">帮助中心</a>
+                <p>Copyright © 2003-2016<a id="company" href="#">北京易听信息技术有限公司</a>  版权所有</p>
+                <small>京ICP备11022602号 | 京ICP证080320号 | 京网文[2013]0296-062 | 京公网安备11010802020469号 | 中国网络正版音乐促进联盟创始会员 |</small>
+            </div>
+            <br/>
+        </div>
+    </div>
+    <script src="JS/jquery-2.2.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/holder.min.js"></script>
+    <script src="JS/special.js"></script>
+</body>
+</html>

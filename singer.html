@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>歌手</title>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="JS/jquery-2.2.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/holder.min.js"></script>
+    <link rel="stylesheet" href="css/singer.css"/>
+    <script src="JS/singer.js"></script>
+</head>
+<body>
+<div class="container box">
+    <div class="row" id="header">
+        <div class="col-md-3 start" style="">
+            <small>保存到桌面<span>|</span>曲风<span>|</span>排行榜<span>|</span>专辑库<span>|</span>娱乐</small>
+        </div>
+        <div class="col-md-3" style="">
+            <img style="padding-left: 35px;" src="images/header-share.JPG"/><small>分享到</small>
+            <img src="images/header-zhihu.jpg"/>
+            <img src="images/header-xinlang.jpg"/>
+            <img src="images/header-qq.jpg"/>
+            <img src="images/header-1.JPG"/>
+        </div>
+        <div class="col-md-6 text-right" style="">
+            <img style="" src="images/header-2.jpg"/>
+            <img src="images/header-3.jpg"/>
+            <img src="images/header-4.jpg"/>
+            <img src="images/header-5.jpg"/>
+            <small style="margin:0 10px;">手机版：m.1ting.com</small>
+            <img src="images/header-11.jpg"/>
+            <small style="color: #999;">加入收藏</small>
+        </div>
+    </div>
+    <div class="row" style="">
+        <div class="col-md-2">
+            <img src="images/header-6.jpg"/>
+        </div>
+        <div class="col-md-3 col-md-offset-2" style="">
+            <div class="input-prepend input-append" style="">
+                <form class=" form-inline " >
+                    <div class="form-group">
+                        <div class="input-group" style="border: 1px solid #5bc0de; border-radius: 5px;margin-top: 15px;">
+                            <div class="input-group-addon" style="margin:0;padding: 0;">
+                                <select class="add-on  " style="height: 28px;">
+                                    <option><a href="#">全部</a></option>
+                                    <option><a href="#">歌曲</a></option>
+                                    <option><a href="#">专辑</a></option>
+                                    <option><a href="#">歌手</a></option>
+                                    <option><a href="#">歌词</a></option>
+                                </select>
+                            </div>
+                            <input style="width:300px;" type="text" class="form-control input-sm" placeholder="支持拼音搜索">
+                            <div class="input-group-addon" style="margin:0;padding: 0;">
+                                <button type="submit" class="btn btn-info btn-sm" style="height:28px;">搜索</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 col-md-offset-1 text-right header2aright">
+            <p style="">
+                <span>免费注册-</span>
+                <strong style="">登录</strong>
+                <a href="#" >
+                    <img src="images/header-xinlang.jpg"/>
+                    <span >微博登录</span>
+                </a>
+                <a href="#">
+                    <img src="images/header-qq.jpg"/>
+                    <span >QQ登录</span>
+                </a>
+                <span style="color: #31b0d5;">防诈骗</span>
+            </p>
+        </div>
+    </div>
+    <div class="row" id="nav" style="background: #00A7FF;font-weight: bold;">
+        <div class="col-md-6"  role="navigation">
+            <ul class="nav navbar-nav" id="nav1">
+                <li  class="active"><a href="home.html" >首页</a></li>
+                <li id="singer"><a href="#">歌手</a></li>
+                <li ><a href="special.html">专辑</a></li>
+                <li ><a href="ranklist.html">排行版</a></li>
+                <li id="channal"><a href="#">精选频道</a></li>
+            </ul>
+        </div>
+        <div class="col-md-5 col-md-offset-1 " id="nav2">
+            <p class="navbar-text">
+                <a href="#"  >曲风分类</a>|
+                <a href="subject.html">专题.活动</a>|
+                <a href="#">美女主播</a>|
+                <a href="app.html">一听Apps</a>
+            </p>
+            <button type="button" class="text-right btn btn-info navbar-btn">随便一听</button>
+        </div>
+
+    </div>
+    <div class="row text-center" style="background: #F2F6F8;" id="navsinger">
+        <div id="show1" class="col-md-12 show">
+            <small><a href="#">华语女歌手</a> </small><span>|</span>
+            <small><a href="#">华语男歌手</a></small><span>|</span>
+            <small><a href="#">华语组合</a></small><span>|</span>
+            <small><a href="#">欧美女歌手</a></small><span>|</span>
+            <small><a href="#">欧美男歌手</a></small><span>|</span>
+            <small><a href="#">欧美组合</a></small><span>|</span>
+            <small><a href="#">韩国</a></small><span>|</span>
+            <small><a href="#">日本</a></small><span>|</span>
+            <small><a href="#">影视</a></small><span>|</span>
+            <small><a href="#">其他</a></small><span>|</span>
+            <small class="navsingerorange"><a href="#">佛教音乐</a></small>
+            <small class="navsingerorange"><a href="#">胎教/儿歌</a></small>
+            <small class="navsingerorange"><a href="#">广场舞</a></small>
+            <small class="navsingerorange"><a href="#">戏曲</a></small>
+            <small class="navsingerorange"><a href="#">高清MV</a></small>
+        </div>
+        <div id="show2" class="col-md-12 text-center hidden">
+            <small><a href="#">经典老歌</a> </small><span>|</span>
+            <small><a href="#">古典音乐</a></small><span>|</span>
+            <small><a href="#">佛乐</a></small><span>|</span>
+            <small><a href="#">胎教</a></small><span>|</span>
+            <small><a href="#">广场舞</a></small><span>|</span>
+            <small><a href="#">戏曲</a></small><span>|</span>
+            <small><a href="#">八卦娱乐</a></small><span>|</span>
+            <small><a href="#">高清MV音乐排行榜</a></small>
+        </div>
+    </div>
+    <div class="row content" >
+        <div class="col-md-2 start contentleft">
+            <p>全部歌手</p>
+            <ul>
+                <li>华语</li>
+                <li><a href="#">华语女歌手</a></li>
+                <li><a href="#">华语男歌手</a></li>
+                <li><a href="#">华语组合</a></li>
+            </ul>
+            <ul>
+                <li>欧美</li>
+                <li><a href="#">欧美女歌手</a></li>
+                <li><a href="#">欧美男歌手</a></li>
+                <li><a href="#">欧美组合</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">韩国</a></li>
+                <li><a href="#">日本</a></li>
+                <li><a href="#">影视</a></li>
+                <li><a href="#">其他</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10 start contentright ">
+            <div class="col-md-12 start reference" >
+                <p>全部歌手</p>
+                <div>索引：
+                    <a href="#s">推荐</a>
+                    <a href="#singerA">A</a>
+                    <a href="#singerB">B</a>
+                    <a href="#singerC">C</a>
+                    <a href="#singerD">D</a>
+                    <a href="#singerE">E</a>
+                    <a href="#singerF">F</a>
+                    <a href="#singerG">G</a>
+                    <a href="#singerI">I</a>
+                    <a href="#singerJ">J</a>
+                    <a href="#singerK">K</a>
+                    <a href="#singerL">L</a>
+                    <a href="#singerM">M</a>
+                    <a href="#singerN">N</a>
+                    <a href="#singerO">O</a>
+                    <a href="#singerP">P</a>
+                    <a href="#singerQ">Q</a>
+                    <a href="#singerR">R</a>
+                    <a href="#singerS">S</a>
+                    <a href="#singerT">T</a>
+                    <a href="#singerU">U</a>
+                    <a href="#singerV">V</a>
+                    <a href="#singerW">W</a>
+                    <a href="#singerX">X</a>
+                    <a href="#singerY">Y</a>
+                    <a href="#singerZ">Z</a>
+                    <a href="#singer0">0-9</a>
+                </div>
+            </div>
+            <div class="col-md-12 start singerimg"  style="margin-top: 8px;">
+                <p><a href="#" >推荐</a></p>
+                <div>
+                    <img src="images/singer1.png"/><br/>
+                    <a href="#">刀郎</a>
+                </div>
+                <div>
+                    <img src="images/singer2.png"/><br/>
+                    <a href="#">刘德华</a>
+                </div>
+                <div>
+                    <img src="images/singer3.png"/><br/>
+                    <a href="#">陈奕迅</a>
+                </div>
+                <div>
+                    <img src="images/singer4.png"/><br/>
+                    <a href="#">张学友</a>
+                </div>
+                <div>
+                    <img src="images/singer5.png"/><br/>
+                    <a href="#">王菲</a>
+                </div>
+                <div>
+                    <img src="images/singer6.png"/><br/>
+                    <a href="#">邓丽君</a>
+                </div>
+                <div>
+                    <img src="images/singer7.png"/><br/>
+                    <a href="#">韩红</a>
+                </div>
+                <div>
+                    <img src="images/singer8.png"/><br/>
+                    <a href="#">龚玥</a>
+                </div>
+            </div>
+            <div class="col-md-12 start singerimg" style="margin-top: 8px;">
+                <div>
+                    <img src="images/singer9.png"/><br/>
+                    <a href="#">黑鸭子合唱组</a>
+                </div>
+                <div>
+                    <img src="images/singer10.png"/><br/>
+                    <a href="#">梦之旅组合</a>
+                </div>
+                <div>
+                    <img src="images/singer11.png"/><br/>
+                    <a href="#">Beyond</a>
+                </div>
+                <div>
+                    <img src="images/singer12.png"/><br/>
+                    <a href="#">S.H.E</a>
+                </div>
+                <div>
+                    <img src="images/singer13.png"/><br/>
+                    <a href="#">SMAP</a>
+                </div>
+                <div>
+                    <img src="images/singer14.png"/><br/>
+                    <a href="#">喜多郎</a>
+                </div>
+                <div>
+                    <img src="images/singer15.png"/><br/>
+                    <a href="#">山下智久</a>
+                </div>
+                <div>
+                    <img src="images/singer16.png"/><br/>
+                    <a href="#">阿兰</a>
+                </div>
+            </div>
+            <div class="col-md-12 start singerimg" style="margin-top: 8px;">
+                <div>
+                    <img src="images/singer17.png"/><br/>
+                    <a href="#">少女时代</a>
+                </div>
+                <div>
+                    <img src="images/singer18.png"/><br/>
+                    <a href="#">FT Island</a>
+                </div>
+                <div>
+                    <img src="images/singer19.png"/><br/>
+                    <a href="#">EXO</a>
+                </div>
+                <div>
+                    <img src="images/singer20.png"/><br/>
+                    <a href="#">Kara</a>
+                </div>
+                <div>
+                    <img src="images/singer21.png"/><br/>
+                    <a href="#">色戒</a>
+                </div>
+                <div>
+                    <img src="images/singer22.png"/><br/>
+                    <a href="#">长恨歌</a>
+                </div>
+                <div>
+                    <img src="images/singer23.png"/><br/>
+                    <a href="#">灌篮高手</a>
+                </div>
+                <div>
+                    <img src="images/singer24.png"/><br/>
+                    <a href="#">又见一帘幽梦</a>
+                </div>
+            </div>
+            <div class="col-md-12 start singerimg" style="margin-top: 8px;">
+                <div>
+                    <img src="images/singer25.png"/><br/>
+                    <a href="#">最爱主打歌</a>
+                </div>
+                <div>
+                    <img src="images/singer26.png"/><br/>
+                    <a href="#">奥斯卡金曲</a>
+                </div>
+                <div>
+                    <img src="images/singer27.png"/><br/>
+                    <a href="#">百代唱片</a>
+                </div>
+                <div>
+                    <img src="images/singer28.png"/><br/>
+                    <a href="#">Paul</a>
+                </div>
+                <div>
+                    <img src="images/singer29.png"/><br/>
+                    <a href="#">Richard</a>
+                </div>
+                <div>
+                    <img src="images/singer30.png"/><br/>
+                    <a href="#">Nelly</a>
+                </div>
+                <div>
+                    <img src="images/singer31.png"/><br/>
+                    <a href="#">Michael</a>
+                </div>
+                <div>
+                    <img src="images/singer32.png"/><br/>
+                    <a href="#">Shakira</a>
+                </div>
+
+            </div>
+            <div class="col-md-12 start singerimg" style="margin-top: 8px;">
+                <div>
+                    <img src="images/singer33.png"/><br/>
+                    <a href="#">Tori</a>
+                </div>
+                <div>
+                    <img src="images/singer34.png"/><br/>
+                    <a href="#">Gwen</a>
+                </div>
+                <div>
+                    <img src="images/singer35.png"/><br/>
+                    <a href="#">Hilary</a>
+                </div>
+                <div>
+                    <img src="images/singer36.png"/><br/>
+                    <a href="#">Tamas</a>
+                </div>
+                <div>
+                    <img src="images/singer37.png"/><br/>
+                    <a href="#">Sum41</a>
+                </div>
+                <div>
+                    <img src="images/singer38.png"/><br/>
+                    <a href="#">Bee</a>
+                </div>
+                <div>
+                    <img src="images/singer39.png"/><br/>
+                    <a href="#">AD/DC</a>
+                </div>
+                <div>
+                    <img src="images/singer40.png"/><br/>
+                    <a href="#">王力宏</a>
+                </div>
+
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerA">
+                    <p><a href="#">A</a></p>
+                    <ul>
+                        <li><a href="#">阿宝</a></li>
+                        <li><a href="#">AC/DC</a></li>
+                        <li><a href="#">爱在情歌蔓延时</a></li>
+                        <li><a href="#">Alizee</a></li>
+                        <li><a href="#">奥斯卡金曲</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">A Love Like Pi</a></li>
+                        <li><a href="#">Adam Lambert</a></li>
+                        <li><a href="#">Akon</a></li>
+                        <li><a href="#">All 4 one</a></li>
+                        <li><a href="#">Aqua</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">A pink</a></li>
+                        <li><a href="#">After School</a></li>
+                        <li><a href="#">阿兰</a></li>
+                        <li><a href="#">Amanda Jenssen</a></li>
+                        <li><a href="#">Arashi</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Aaron</a></li>
+                        <li><a href="#">爱上女主播</a></li>
+                        <li><a href="#">Alice In Chains</a></li>
+                        <li><a href="#">安室奈美惠</a></li>
+                        <li><a href="#">Avril Lavigne</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerB">
+                    <p><a href="#">B</a></p>
+                    <ul>
+                        <li><a href="#">B1A4</a></li>
+                        <li><a href="#">Bandari</a></li>
+                        <li><a href="#">BEAST</a></li>
+                        <li><a href="#">蝙蝠侠</a></li>
+                        <li><a href="#">Blur</a></li>
+                        <li><a href="#">Boyz ll Men</a></li>
+                        <li><a href="#">By2</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">霸王别姬</a></li>
+                        <li><a href="#">宝丽金群星</a></li>
+                        <li><a href="#">Bee Gees</a></li>
+                        <li><a href="#">Bigbang</a></li>
+                        <li><a href="#">BoA</a></li>
+                        <li><a href="#">Boyzone</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Backstreet Boys</a></li>
+                        <li><a href="#">宝丽金</a></li>
+                        <li><a href="#">Beyonce</a></li>
+                        <li><a href="#">滨崎步</a></li>
+                        <li><a href="#">Bob Dylan</a></li>
+                        <li><a href="#">Brave girls</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">百代唱片</a></li>
+                        <li><a href="#">Barbra Streisland</a></li>
+                        <li><a href="#">Beyoncd</a></li>
+                        <li><a href="#">Black Eyed Peas</a></li>
+                        <li><a href="#">Boyfriend</a></li>
+                        <li><a href="#">Britney Spears</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerC">
+                    <p><a href="#">C</a></p>
+                    <ul>
+                        <li><a href="#">Celine Dion</a></li>
+                        <li><a href="#">蔡依林</a></li>
+                        <li><a href="#">陈楚生</a></li>
+                        <li><a href="#">成龙</a></li>
+                        <li><a href="#">川岛茉树代</a></li>
+                        <li><a href="#">Craig David</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">蔡健雅</a></li>
+                        <li><a href="#">仓木麻衣</a></li>
+                        <li><a href="#">陈慧琳</a></li>
+                        <li><a href="#">赤壁 原声</a></li>
+                        <li><a href="#">纯音乐</a></li>
+                        <li><a href="#">Cranberries The</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">蔡可荔</a></li>
+                        <li><a href="#">草蜢</a></li>
+                        <li><a href="#">陈绮贞</a></li>
+                        <li><a href="#">虫师</a></li>
+                        <li><a href="#">Cinderella</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">蔡琴</a></li>
+                        <li><a href="#">草原牧歌</a></li>
+                        <li><a href="#">陈奕迅</a></li>
+                        <li><a href="#">Chris Brown</a></li>
+                        <li><a href="#">Coldplay</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerD">
+                    <p><a href="#">D</a></p>
+                    <ul>
+                        <li><a href="#">大塚愛</a></li>
+                        <li><a href="#">G.E.M邓紫棋</a></li>
+                        <li><a href="#">电子琴音乐</a></li>
+                        <li><a href="#">董文华</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">大黑魔季</a></li>
+                        <li><a href="#">迪克牛仔</a></li>
+                        <li><a href="#">Dido</a></li>
+                        <li><a href="#">Duffy</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">刀郎</a></li>
+                        <li><a href="#">电视剧歌曲大全</a></li>
+                        <li><a href="#">Disturbed</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">邓丽君</a></li>
+                        <li><a href="#">电影原声</a></li>
+                        <li><a href="#">动力火车</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerF">
+                    <p><a href="#">F</a></p>
+                    <ul>
+                        <li><a href="#">F.I.R</a></li>
+                        <li><a href="#">凤凰传奇</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">f(x)</a></li>
+                        <li><a href="#">FT Island</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">发烧HiFi</a></li>
+                        <li><a href="#">佛教音乐</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">飞轮海</a></li>
+                        <li><a href="#">福山雅治</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerG">
+                    <p><a href="#">G</a></p>
+                    <ul>
+                        <li><a href="#">Gérald De Palmas</a></li>
+                        <li><a href="#">功夫熊猫</a></li>
+                        <li><a href="#">古典音乐</a></li>
+                        <li><a href="#">Gwen Stefani</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">港台群星</a></li>
+                        <li><a href="#">龚玥</a></li>
+                        <li><a href="#">古巨基</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">歌舞青春</a></li>
+                        <li><a href="#">Green Day</a></li>
+                        <li><a href="#">灌篮高手</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Girl Next Door</a></li>
+                        <li><a href="#">谷村新司</a></li>
+                        <li><a href="#">广末凉子</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerH">
+                    <p><a href="#">H</a></p>
+                    <ul>
+                        <li><a href="#">海豚湾恋人</a></li>
+                        <li><a href="#">黑糖群侠传</a></li>
+                        <li><a href="#">胡彦斌</a></li>
+                        <li><a href="#">黄梅戏</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">韩红</a></li>
+                        <li><a href="#">黑鸭子合唱组</a></li>
+                        <li><a href="#">花吃了那女孩</a></li>
+                        <li><a href="#">黄小琥</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">每日一听</a></li>
+                        <li><a href="#">Hilary Duff</a></li>
+                        <li><a href="#">花儿乐队</a></li>
+                        <li><a href="#">火影忍者</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">黑Girl</a></li>
+                        <li><a href="#">红色摇滚</a></li>
+                        <li><a href="#">环球音乐</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerI">
+                    <p><a href="#">I</a></p>
+                    <div style="color:#999;">本类暂无歌手</div>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerJ">
+                    <p><a href="#">J</a></p>
+                    <ul>
+                        <li><a href="#">James Blunt</a></li>
+                        <li><a href="#">吉它曲</a></li>
+                        <li><a href="#">酒井法子</a></li>
+                        <li><a href="#">Justin Timberlake</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Jay-Z</a></li>
+                        <li><a href="#">吉田亚纪子(KOKIA)</a></li>
+                        <li><a href="#">John Legend</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Jessica Simpson</a></li>
+                        <li><a href="#">加勒比海盗</a></li>
+                        <li><a href="#">JUJU</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">经典老歌</a></li>
+                        <li><a href="#">Justin Bieber</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerK">
+                    <p><a href="#">K</a></p>
+                    <ul>
+                        <li><a href="#">Kanye West</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kara</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Kelly Clarkson</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">快乐女声</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerL">
+                    <p><a href="#">L</a></p>
+                    <ul>
+                        <li><a href="#">L'Arc~en~Ciel</a></li>
+                        <li><a href="#">李健</a></li>
+                        <li><a href="#">Lil Wayne</a></li>
+                        <li><a href="#">刘德华</a></li>
+                        <li><a href="#">旅行团</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Lady GaGa</a></li>
+                        <li><a href="#">李宇春</a></li>
+                        <li><a href="#">林忆莲</a></li>
+                        <li><a href="#">刘若英</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Leona Lewis</a></li>
+                        <li><a href="#">梁静茹</a></li>
+                        <li><a href="#">零点</a></li>
+                        <li><a href="#">留声岁月-老歌新唱</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Leonard Cohen</a></li>
+                        <li><a href="#">梁咏琪</a></li>
+                        <li><a href="#">Linkin Park</a></li>
+                        <li><a href="#">罗志祥</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerM">
+                    <p><a href="#">M</a></p>
+                    <ul>
+                        <li><a href="#">马天宇</a></li>
+                        <li><a href="#">MBLAQ</a></li>
+                        <li><a href="#">Michael Learns to Rock</a></li>
+                        <li><a href="#">Moby</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Mariah Carey</a></li>
+                        <li><a href="#">梦之旅演唱组合</a></li>
+                        <li><a href="#">闽南歌专辑</a></li>
+                        <li><a href="#">木乃伊</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Maroon 5</a></li>
+                        <li><a href="#">Michael Jackson</a></li>
+                        <li><a href="#">命中注定我爱你</a></li>
+                        <li><a href="#">My Blueberry Nights (蓝莓之</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Mary J. Blige</a></li>
+                        <li><a href="#">Michael Johns</a></li>
+                        <li><a href="#">莫文蔚</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerN">
+                    <p><a href="#">N</a></p>
+                    <ul>
+                        <li><a href="#">那英</a></li>
+                        <li><a href="#">Nelly</a></li>
+                        <li><a href="#">Norah Jones</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">南拳妈妈</a></li>
+                        <li><a href="#">Nightwish</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">NANA2</a></li>
+                        <li><a href="#">Nirvana</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Ne-Yo</a></li>
+                        <li><a href="#">牛奶咖啡组合</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerO">
+                    <p><a href="#">O</a></p>
+                    <ul>
+                        <li><a href="#">Oasis</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Orange Caramel</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerP">
+                    <p><a href="#">P</a></p>
+                    <ul>
+                        <li><a href="#">潘玮柏</a></li>
+                        <li><a href="#">Pink</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Paolo Nutini</a></li>
+                        <li><a href="#">Placebo</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Paul Simon</a></li>
+                        <li><a href="#">朴树</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">平井堅</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerQ">
+                    <p><a href="#">Q</a></p>
+                    <ul>
+                        <li><a href="#">汽车音乐</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">齐秦</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerR">
+                    <p><a href="#">R</a></p>
+                    <ul>
+                        <li><a href="#">R. Kelly</a></li>
+                        <li><a href="#">Richard Clayderman</a></li>
+                        <li><a href="#">女子十二乐坊</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">儿童歌曲</a></li>
+                        <li><a href="#">Rihanna</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Rainbow</a></li>
+                        <li><a href="#">Robbie Williams</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">任贤齐</a></li>
+                        <li><a href="#">Ronan Keating</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerS">
+                    <p><a href="#">S</a></p>
+                    <ul>
+                        <li><a href="#">S.H.E</a></li>
+                        <li><a href="#">Sarah McLachlan</a></li>
+                        <li><a href="#">Shakira</a></li>
+                        <li><a href="#">Shania Twain</a></li>
+                        <li><a href="#">士兵突击</a></li>
+                        <li><a href="#">SMAP</a></li>
+                        <li><a href="#">Sum 41</a></li>
+                        <li><a href="#">Susan Boyle</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">萨顶顶</a></li>
+                        <li><a href="#">Savage Garden</a></li>
+                        <li><a href="#">山下智久(NewS)</a></li>
+                        <li><a href="#">少女时代</a></li>
+                        <li><a href="#">SHINee</a></li>
+                        <li><a href="#">松浦亚弥</a></li>
+                        <li><a href="#">孙楠</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Sarah Brightman</a></li>
+                        <li><a href="#">Secret</a></li>
+                        <li><a href="#">上户彩</a></li>
+                        <li><a href="#">神话</a></li>
+                        <li><a href="#">水木年华</a></li>
+                        <li><a href="#">宋祖英</a></li>
+                        <li><a href="#">Super Junior</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Sarah Connor</a></li>
+                        <li><a href="#">色·戒</a></li>
+                        <li><a href="#">尚雯婕</a></li>
+                        <li><a href="#">深田恭子</a></li>
+                        <li><a href="#">SISTAR</a></li>
+                        <li><a href="#">Speed Racer 急速赛车</a></li>
+                        <li><a href="#">Supreme Team</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerT">
+                    <p><a href="#">T</a></p>
+                    <ul>
+                        <li><a href="#">T-ara</a></li>
+                        <li><a href="#">谭咏麟</a></li>
+                        <li><a href="#">Teen Top</a></li>
+                        <li><a href="#">Tori Amos</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">胎教音乐</a></li>
+                        <li><a href="#">堂本光一</a></li>
+                        <li><a href="#">The Beatles</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">泰坦尼克号</a></li>
+                        <li><a href="#">唐朝</a></li>
+                        <li><a href="#">倖田來未</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Tamas Wells</a></li>
+                        <li><a href="#">陶喆</a></li>
+                        <li><a href="#">同一首歌</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerU">
+                    <p><a href="#">U</a></p>
+                    <ul>
+                        <li><a href="#">U-KISS</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerV">
+                    <p><a href="#">V</a></p>
+                    <ul>
+                        <li><a href="#">Vitas</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerW">
+                    <p><a href="#">W</a></p>
+                    <ul>
+                        <li><a href="#">w-inds</a></li>
+                        <li><a href="#">WaT</a></li>
+                        <li><a href="#">五月天</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">王菲</a></li>
+                        <li><a href="#">Westlife</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">汪峰</a></li>
+                        <li><a href="#">Whitney Houston</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">王力宏</a></li>
+                        <li><a href="#">无印良品</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerX">
+                    <p><a href="#">X</a></p>
+                    <ul>
+                        <li><a href="#">喜多郎</a></li>
+                        <li><a href="#">小娟&山谷里的居民</a></li>
+                        <li><a href="#">心灵SPA水晶音乐</a></li>
+                        <li><a href="#">许嵩</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">西野カナ</a></li>
+                        <li><a href="#">小田和正</a></li>
+                        <li><a href="#">信乐团</a></li>
+                        <li><a href="#">许巍</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">仙剑奇侠传</a></li>
+                        <li><a href="#">萧亚轩</a></li>
+                        <li><a href="#">信</a></li>
+                        <li><a href="#">薛之谦</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">小虎队</a></li>
+                        <li><a href="#">小野丽莎</a></li>
+                        <li><a href="#">星球大战三部曲</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerY">
+                    <p><a href="#">Y</a></p>
+                    <ul>
+                        <li><a href="#">杨丞琳</a></li>
+                        <li><a href="#">游鸿明</a></li>
+                        <li><a href="#">宇多田光</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">杨坤</a></li>
+                        <li><a href="#">有声读物</a></li>
+                        <li><a href="#">与非门</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">叶问</a></li>
+                        <li><a href="#">有声佛书</a></li>
+                        <li><a href="#">羽泉</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">音乐疗法</a></li>
+                        <li><a href="#">又见一帘幽梦</a></li>
+                        <li><a href="#">欲望都市</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singerZ">
+                    <p><a href="#">Z</a></p>
+                    <ul>
+                        <li><a href="#">ZE:A</a></li>
+                        <li><a href="#">张靓颖</a></li>
+                        <li><a href="#">张震岳</a></li>
+                        <li><a href="#">周华健</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">长恨歌</a></li>
+                        <li><a href="#">张韶涵</a></li>
+                        <li><a href="#">至上励合</a></li>
+                        <li><a href="#">助眠音乐</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">张惠妹</a></li>
+                        <li><a href="#">张信哲</a></li>
+                        <li><a href="#">中孝介</a></li>
+                        <li><a href="#">纵贯线</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">张杰</a></li>
+                        <li><a href="#">张学友</a></li>
+                        <li><a href="#">周笔畅</a></li>
+                        <li><a href="#">最爱的主打歌</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-12 start singerlist" style="">
+                <section id="singer0">
+                    <p><a href="#">0-9</a></p>
+                    <ul>
+                        <li><a href="#">007系列电影原声</a></li>
+                        <li><a href="#">4minute</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">2000钢琴恋曲</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">2NE1</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">2PM</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+     <!--尾部-->
+    <div class="row" style="margin-top: 15px;border-top: 1px solid #B2D0EA;">
+        <div class="col-md-12 start text-center footer">
+            <a href="#">关于一听</a><span>|</span>
+            <a href="#">版权声明</a><span>|</span>
+            <a href="#">诚聘英才</a><span>|</span>
+            <a href="#">联系我们</a><span>|</span>
+            <a href="#">歌曲入库</a><span>|</span>
+            <a href="#">广告服务</a><span>|</span>
+            <a href="#">友情链接</a><span>|</span>
+            <a href="#">历史合作</a><span>|</span>
+            <a href="#">帮助中心</a>
+            <p>Copyright © 2003-2016<a id="company" href="#">北京易听信息技术有限公司</a>  版权所有</p>
+            <small>京ICP备11022602号 | 京ICP证080320号 | 京网文[2013]0296-062 | 京公网安备11010802020469号 | 中国网络正版音乐促进联盟创始会员 |</small>
+        </div>
+        <br/>
+    </div>
+</div>
+</body>
+</html>

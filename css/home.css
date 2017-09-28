@@ -1,0 +1,213 @@
+.start{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    background: white;
+}
+
+#header{
+    margin:3px 0;
+    border-bottom: 1px solid #B2D0EA;
+}
+#header div{
+    height: 24px;
+}
+#header span{
+    padding:0 7px ;
+    color:#B2D0EA;
+}
+#header img{
+    margin:0 2px;
+}
+
+.header2aright{
+
+    font-size:12px;
+    margin-top: 22px;
+}
+.header2aright a{
+    margin-right:10px;
+    color:#122b40;
+}
+.header2aright strong{
+    margin-right:10px;
+    color:#31b0d5;
+}
+#nav{
+    border-radius: 10px 10px 0 0;
+
+}
+#nav1 li{
+    padding:0 15px;
+}
+#nav1 a{
+    color: whitesmoke;
+}
+#nav1 a:hover{
+    background:#337ab7;
+    border-radius: 10px;
+}
+#nav2,#nav2 a{
+    color: #bce8f1;
+    font-size:12px;
+}
+#nav2 a{
+    margin:0 10px;
+}
+#nav2 a:hover{
+    color:snow;
+}
+#nav2 button{
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+#navsinger,#navsinger a{
+    color:#999999;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 0 10px 10px;
+}
+#navsinger span{
+    margin:0 10px;
+}
+#navsinger .navsingerorange a,.navsingerorange a:hover{
+    color:#FF6600;
+    margin:0 5px;
+}
+
+.content1left div{
+    font-size: 12px;
+    border:1px solid #D3D9E0;
+    border-radius: 10px 10px 0 0;
+}
+.content1left a{
+    color: #666;
+}
+.content1left a:hover{
+    color:#31b0d5;
+}
+.contentcenter a{
+    color:#122b40;
+}
+.contentcenterimg{
+    font-size: 12px;
+}
+.contentcenterimg img{
+    width:104px;
+    height:112px;
+    /*opacity: 0.6;*/
+}
+.contentcenterimg div{
+    border: 1px solid #999;
+    padding: 1px;
+    margin-bottom: 5px;
+    height:112px;
+}
+.contentcenterimg a{
+    color:#122b40;
+}
+.contentcenterimg .play{
+    width:28px;
+    height: 29px;
+    opacity: 0.6;
+    position:relative;
+    left:68px;
+    top:-29px;
+    z-index:0;
+}
+.roll img{
+    width:275px;
+    height:120px;
+}
+.content21>div div{
+    height: 20px;
+    line-height: 20px;
+    margin-left:3px;
+    /*background: hotpink;*/
+    border-bottom:1px dashed #DBDBDB;"
+}
+.content21 a{
+    color:#555555;
+}
+.content21 a:hover{
+    color: #FFB562;
+}
+.content24 img{
+    padding:1px;
+    margin:2px 5px;
+}
+.content24 small{
+    padding:3px 20px;
+    border-left: 1px dashed #d4d4d4;
+    border-top: 1px dashed #d4d4d4;
+}
+.content3 p{
+    background:#D7F0F9;
+    border-left: 1px solid #00A7FF;
+    height: 40px;
+    line-height: 40px;
+}
+.content3 div{
+    padding-left: 3px;
+    border-bottom: 1px dashed #DBDBDB;
+    font-size:12px;
+}
+.content3 div a{
+    color:#555;
+}
+.content4 ul,.content5 ul{
+    float: left;
+}
+.content4,.content5{
+    border: 1px solid #B2D0EA;
+    border-top: none;
+}
+.content4 ul li,.content5 ul li{
+    color:#FFD988;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 50px;
+}
+.content4 ul a,.content5 ul a{
+    font-size: 12px;
+    color:#666666;
+}
+.content5 ul{
+    list-style: none;
+}
+.content5 ul li{
+    margin-right: 15px;
+}
+.footer{
+    margin-top: 10px;
+}
+.footer a,.footer small {
+    color: #666666;
+}
+.footer span{
+    margin:0 10px;
+}
+.footer p{
+    margin-top: 5px;
+}
+#company{
+    color:#31b0d5;
+    font-weight: bold;
+}
+.active1{
+    display:block;
+    margin-left: 3px;
+}
+.frame{
+    border:1px solid #122b40;
+}
+#sbox span{
+    color: #FF664F;
+}
+#sbox div{
+    border-bottom: 1px dashed #DBDBDB;
+    padding:10px 3px;
+}

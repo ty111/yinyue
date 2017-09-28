@@ -1,0 +1,241 @@
+.start{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+.box{
+    background: white;
+}
+#header{
+    margin:3px 0;
+    border-bottom: 1px solid #B2D0EA;
+}
+#header div{
+    height: 24px;
+}
+#header span{
+    padding:0 7px ;
+    color:#B2D0EA;
+}
+#header img{
+    margin:0 2px;
+}
+
+.header2aright{
+
+    font-size:12px;
+    margin-top: 22px;
+}
+.header2aright a{
+    margin-right:10px;
+    color:#122b40;
+}
+.header2aright strong{
+    margin-right:10px;
+    color:#31b0d5;
+}
+#nav{
+    border-radius: 10px 10px 0 0;
+
+}
+#nav1 li{
+    padding:0 15px;
+}
+#nav1 a{
+    color: whitesmoke;
+}
+#nav1 a:hover{
+    background:#337ab7;
+    border-radius: 10px;
+}
+#nav2,#nav2 a{
+    color: #bce8f1;
+    font-size:12px;
+}
+#nav2 a{
+    margin:0 10px;
+}
+#nav2 a:hover{
+    color:snow;
+}
+#nav2 button{
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+#navsinger,#navsinger a{
+    color:#999999;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 0 10px 10px;
+}
+#navsinger span{
+    margin:0 10px;
+}
+#navsinger .navsingerorange a,.navsingerorange a:hover{
+    color:#FF6600;
+    margin:0 5px;
+}
+/*ÄÚÈÝ*/
+.content{
+    margin-top: 5px;
+}
+.contentleft{
+    /*background: goldenrod;*/
+}
+.contentleft p{
+    height:30px;
+    line-height: 30px;
+    color: seashell;
+    background: #5bc0de;
+    padding-left: 5px;
+}
+.contentleft ul{
+    list-style: none;
+    /*background: goldenrod;*/
+    padding: 0;
+}
+.contentleft ul li{
+    margin-left: 5px;
+    height:30px;
+    line-height: 30px;
+}
+.contentright{
+    /*background: lavenderblush;*/
+    padding-left: 10px;
+    border-left:1px solid #CDD4DC;
+    /*height:100px;*/
+}
+.reference p{
+    font-size:16px;
+    font-weight: bold;
+}
+.reference div{
+    color:#999;
+}
+.reference div a{
+    margin:0  8px;
+}
+.singerimg p{
+    font-weight: bold;
+}
+.singerimg div{
+    float: left;
+    text-align: center;
+    margin:0 20px;
+}
+.singerimg div img{
+    width:75px;
+    height:75px;
+}
+.singerimg div a{
+    font-size:12px;
+}
+.singerlist{
+    margin-top: 8px;
+}
+.singerlist p{
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #bce8f1;
+}
+.singerlist ul{
+    list-style: none;
+    float: left;
+    padding:0;
+}
+.singerlist ul li{
+    height:30px;
+    line-height: 30px;
+}
+
+#singerA ul{
+    /*background: pink;*/
+    margin-right:13%;
+}
+#singerB ul{
+    /*background: pink;*/
+    margin-right:15%;
+}
+#singerC ul{
+    /*background: pink;*/
+    margin-right:15%;
+}
+#singerD ul{
+    margin-right:15%;
+}
+#singerE ul{
+    margin-right:16%;
+}
+#singerF ul{
+    margin-right:18%;
+}
+#singerG ul{
+    margin-right: 15%;
+}
+#singerH ul{
+    margin-right: 17%;
+}
+#singerJ ul{
+    margin-right: 13%;
+}
+#singerK ul{
+    margin-right: 18%;
+}
+#singerL ul{
+    margin-right: 15%;
+}
+#singerM ul{
+     margin-right: 10%;
+ }
+#singerN ul{
+    margin-right: 17%;
+}
+#singerO ul,#singerQ ul{
+    margin-right: 19%;
+}
+#singerP ul{
+    margin-right: 18%;
+}
+#singerR ul{
+    margin-right: 15%;
+}
+#singerS ul{
+    margin-right: 12%;
+}
+#singerT ul{
+    margin-right: 15%;
+}
+#singerW ul{
+    margin-right: 17%;
+}
+#singerX ul{
+     margin-right: 15%;
+ }
+#singerY ul{
+    margin-right: 15%;
+}
+#singerZ ul{
+    margin-right: 17%;
+}
+#singer0 ul{
+    margin-right: 15%;
+}
+
+
+.footer{
+    margin-top: 10px;
+}
+.footer a,.footer small {
+    color: #666666;
+}
+.footer span{
+    margin:0 10px;
+}
+.footer p{
+    margin-top: 5px;
+}
+#company{
+    color:#31b0d5;
+    font-weight: bold;
+}

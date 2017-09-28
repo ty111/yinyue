@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/home.css"/>
+    <script src="JS/jquery-2.2.0.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/holder.min.js"></script>
+    <script src="JS/home.js"></script>
+</head>
+<body>
+    <div class="container box">
+        <!--<div class="row">-->
+            <!--<div class="col-md-1 start" style="background: chartreuse">1</div>-->
+            <!--<div class="col-md-1 start" style="background: salmon">2</div>-->
+            <!--<div class="col-md-1 start" style="background: wheat">3</div>-->
+            <!--<div class="col-md-1 start" style="background: paleturquoise">4</div>-->
+            <!--<div class="col-md-1 start" style="background: khaki">5</div>-->
+            <!--<div class="col-md-1 start" style="background: blueviolet">6</div>-->
+            <!--<div class="col-md-1 start" style="background: rosybrown">7</div>-->
+            <!--<div class="col-md-1 start" style="background: lightcoral">8</div>-->
+            <!--<div class="col-md-1 start" style="background: cyan">9</div>-->
+            <!--<div class="col-md-1 start" style="background: mediumblue">10</div>-->
+            <!--<div class="col-md-1 start" style="background: lawngreen">11</div>-->
+            <!--<div class="col-md-1 start" style="background: violet">12</div>-->
+        <!--</div>-->
+        <div class="row" id="header">
+            <div class="col-md-3 start" style="">
+             <small>保存到桌面<span>|</span>曲风<span>|</span>排行榜<span>|</span>专辑库<span>|</span>娱乐</small>
+            </div>
+            <div class="col-md-3" style="">
+                <img style="padding-left: 35px;" src="images/header-share.JPG"/><small>分享到</small>
+                <img src="images/header-zhihu.jpg"/>
+                <img src="images/header-xinlang.jpg"/>
+                <img src="images/header-qq.jpg"/>
+                <img src="images/header-1.JPG"/>
+            </div>
+            <div class="col-md-6 text-right" style="">
+                <img style="" src="images/header-2.jpg"/>
+                <img src="images/header-3.jpg"/>
+                <img src="images/header-4.jpg"/>
+                <img src="images/header-5.jpg"/>
+                <small style="margin:0 10px;">手机版：m.1ting.com</small>
+                <img src="images/header-11.jpg"/>
+                <small style="color: #999;">加入收藏</small>
+            </div>
+        </div>
+        <div class="row" style="">
+            <div class="col-md-2">
+                <img src="images/header-6.jpg"/>
+            </div>
+            <div class="col-md-3 col-md-offset-2" style="">
+                <div class="input-prepend input-append" style="">
+                    <form class=" form-inline " >
+                        <div class="form-group">
+                            <div class="input-group" style="border: 1px solid #5bc0de; border-radius: 5px;margin-top: 15px;">
+                                <div class="input-group-addon" style="margin:0;padding: 0;">
+                                    <select class="add-on  " style="height: 28px;">
+                                        <option><a href="#">全部</a></option>
+                                        <option><a href="#">歌曲</a></option>
+                                        <option><a href="#">专辑</a></option>
+                                        <option><a href="#">歌手</a></option>
+                                        <option><a href="#">歌词</a></option>
+                                    </select>
+                                </div>
+                                    <input style="width:300px;" type="text" class="form-control input-sm" placeholder="支持拼音搜索">
+                                <div class="input-group-addon" style="margin:0;padding: 0;">
+                                    <button type="submit" class="btn btn-info btn-sm" style="height:28px;">搜索</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1 text-right header2aright">
+                    <p style="">
+                        <span>免费注册-</span>
+                        <strong style="">登录</strong>
+                        <a href="#" >
+                            <img src="images/header-xinlang.jpg"/>
+                            <span >微博登录</span>
+                        </a>
+                        <a href="#">
+                            <img src="images/header-qq.jpg"/>
+                            <span >QQ登录</span>
+                        </a>
+                        <span style="color: #31b0d5;">防诈骗</span>
+                    </p>
+            </div>
+        </div>
+        <div class="row" id="nav" style="background: #00A7FF;font-weight: bold;">
+            <div class="col-md-6"  role="navigation">
+                <ul class="nav navbar-nav" id="nav1">
+                    <li  class="active"><a href="#" >首页</a></li>
+                    <li id="singer"><a href="singer.html">歌手</a></li>
+                    <li ><a href="special.html">专辑</a></li>
+                    <li ><a href="ranklist.html">排行版</a></li>
+                    <li id="channal"><a href="#">精选频道</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5 col-md-offset-1 " id="nav2">
+                <p class="navbar-text">
+                    <a href="#"  >曲风分类</a>|
+                    <a href="subject.html">专题.活动</a>|
+                    <a href="#">美女主播</a>|
+                    <a href="app.html">一听Apps</a>
+                </p>
+                <button type="button" class="text-right btn btn-info navbar-btn">随便一听</button>
+            </div>
+
+        </div>
+        <div class="row text-center" style="background: #F2F6F8;" id="navsinger">
+            <div id="show1" class="col-md-12 show">
+                <small><a href="#">华语女歌手</a> </small><span>|</span>
+                <small><a href="#">华语男歌手</a></small><span>|</span>
+                <small><a href="#">华语组合</a></small><span>|</span>
+                <small><a href="#">欧美女歌手</a></small><span>|</span>
+                <small><a href="#">欧美男歌手</a></small><span>|</span>
+                <small><a href="#">欧美组合</a></small><span>|</span>
+                <small><a href="#">韩国</a></small><span>|</span>
+                <small><a href="#">日本</a></small><span>|</span>
+                <small><a href="#">影视</a></small><span>|</span>
+                <small><a href="#">其他</a></small><span>|</span>
+                <small class="navsingerorange"><a href="#">佛教音乐</a></small>
+                <small class="navsingerorange"><a href="#">胎教/儿歌</a></small>
+                <small class="navsingerorange"><a href="#">广场舞</a></small>
+                <small class="navsingerorange"><a href="#">戏曲</a></small>
+                <small class="navsingerorange"><a href="#">高清MV</a></small>
+            </div>
+            <div id="show2" class="col-md-12 text-center hidden">
+                <small><a href="#">经典老歌</a> </small><span>|</span>
+                <small><a href="#">古典音乐</a></small><span>|</span>
+                <small><a href="#">佛乐</a></small><span>|</span>
+                <small><a href="#">胎教</a></small><span>|</span>
+                <small><a href="#">广场舞</a></small><span>|</span>
+                <small><a href="#">戏曲</a></small><span>|</span>
+                <small><a href="#">八卦娱乐</a></small><span>|</span>
+                <small><a href="#">高清MV音乐排行榜</a></small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" style="margin-top: 5px;">
+                <div class="row">
+                    <div class="col-md-12 content1left" >
+                        <div class="table-responsive" style="">
+                            <table class="table table-condensed" >
+                                <tr>
+                                    <td style="font-size:14px;font-weight:bold;color:#8793E1">曲风</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right" ><a href="#">更多曲风</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#">经典老歌</a></td>
+                                    <td></td>
+                                    <td ><a href="#">网络流行</a></td>
+                                    <td align="center"><a href="#">佛乐</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 胎教音乐</a></td>
+                                    <td align="center"><a href="#">流行</a></td>
+                                    <td align="center"><a href="#">DJ</a></td>
+                                    <td><a href="#"> 古典音乐</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 钢&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;琴</a></td>
+                                    <td><a href="#">军营歌曲</a></td>
+                                    <td align="center"><a href="#">民谣</a></td>
+                                    <td><a href="#">演唱会</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 萨克斯</a></td>
+                                    <td align="right"><a href="#">民歌</a></td>
+                                    <td></td>
+                                    <td ><a href="#">韩国影视歌曲</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 有声读物</a></td>
+                                    <td align="center"><a href="#">古筝</a></td>
+                                    <td align="center"><a href="#">爵士</a></td>
+                                    <td ><a href="#">发烧音乐</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-12 content1left" style="margin-top: 3px;" >
+                        <div class="table-responsive" style="">
+                            <table class="table table-condensed" >
+                                <tr>
+                                    <td style="font-size:14px;font-weight:bold;color:#8793E1">榜单</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right" ><a href="#">更多榜单</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#">热门歌曲</a></td>
+                                    <td align="center"><a href="#">经典老歌</a></td>
+                                    <td align="center"><a href="#">最新歌曲</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 网络流行榜</a></td>
+                                    <td align="right"><a href="#">电视剧歌曲</a></td>
+                                    <td align="right"> <a href="#">热门歌手</a></td>
+                                    <td align="center"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 情歌对唱</a></td>
+
+                                    <td align="center"><a href="#">热门专辑</a></td>
+                                    <td align="center"><a href="#">最新专辑</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 华语摇滚</a></td>
+                                    <td align="center"><a href="#">动漫歌曲</a></td>
+                                    <td align="center"><a href="#">电影原声</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><a href="#"> 越剧</a></td>
+                                    <td align="center"><a href="#">专辑归档</a></td>
+                                    <td align="center"><a href="#">随便一听</a></td>
+                                    <td ><a href="#"></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="margin-top: 5px;">
+                <ul class="nav nav-tabs contentcenter" style="border:1px solid #999999;border-radius:10px;margin: 5px 0;">
+                    <li style="width: 175px;" role="presentation"><a href="#" style="font-weight: bold;color:#122b40;">推荐专辑</a></li>
+                    <li role="presentation" class="active"><a href="#tab1" data-toggle="tab">精选</a></li>
+                    <li role="presentation"><a href="#tab2" data-toggle="tab">华语</a></li>
+                    <li role="presentation"><a href="#tab3" data-toggle="tab">欧美</a></li>
+                    <li role="presentation"><a href="#tab4" data-toggle="tab">日韩</a></li>
+                    <li role="presentation"><a style="color:#46b8da;" href="#tab5" data-toggle="tab">最新专辑</a></li>
+                </ul>
+                <div class="tab-content" style="height:325px;border-radius:10px; ">
+                    <div class="tab-pane active" id="tab1">
+                        <div class="col-md-3 contentcenterimg" style="">
+                            <div>
+                                <img style="z-index: -1;" src="images/contant-1-1.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                           <a href="#" ><strong>等的不会是这位 </strong></a>
+                            <p><a href="#" style="">高林生</a></p>
+                        </div>
+                        <div class="col-md-3 contentcenterimg" style="">
+                            <div>
+                                <img src="images/content-1-2.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                            <a href="#" ><strong>最高的地方</strong></a>
+                            <p><a href="#" style="">林文荪</a></p>
+                        </div>
+                        <div class="col-md-3 start contentcenterimg" style="width:108px;border:none;margin:0 15px;">
+                            <div>
+                                <img src="images/content-1-3.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                            <a href="#" ><strong>NO Doubt(EP)</strong></a>
+                            <p><a href="#" style="">VAV</a></p>
+                        </div>
+                        <div class="col-md-3 contentcenterimg" style="">
+                            <div>
+                                <img src="images/content-1-4.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                            <a href="#" ><strong>请在哔声后留言 </strong></a>
+                            <p><a href="#" style="">徐良</a></p>
+                        </div>
+                        <div class="col-md-3 contentcenterimg" style="">
+                            <div>
+                                <img src="images/content-1-5.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                            <a href="#" ><strong>Get Out</strong></a>
+                            <p><a href="#" style="">赵泳鑫</a></p>
+                        </div>
+                        <div class="col-md-3 contentcenterimg" style="">
+                            <div>
+                                <img src="images/content-1-6.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                            <a href="#" ><strong>初学者</strong></a>
+                            <p><a href="#" style="">薛之谦</a></p>
+                        </div>
+                        <div class="col-md-3 contentcenterimg" style="">
+                            <div>
+                                <img src="images/content-1-7.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                            <a href="#" ><strong>合音量T榜第四期</strong></a>
+                            <p><a href="#" style="">内地杂锦合集</a></p>
+                        </div>
+                        <div class="col-md-3 contentcenterimg" style="">
+                            <div>
+                                <img src="images/content-1-8.jpg"/>
+                                <img class="hidden play" style="" src="images/play.jpg"/>
+                            </div>
+                            <a href="#" ><strong>从日新的不正常音... </strong></a>
+                            <p><a href="#" style="">从日新</a></p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">2</div>
+                    <div class="tab-pane" id="tab3">3</div>
+                    <div class="tab-pane" id="tab4">4</div>
+                    <div class="tab-pane" id="tab5">5</div>
+                </div>
+            </div>
+            <div class="col-md-3 roll" style="margin-top: 5px;">
+               <!--<div class="col-md-12">-->
+                <div style="border:1px solid #676767;" id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/content-1-roll1.jpg" >
+                        </div>
+                        <div class="item">
+                            <img src="images/content-1-roll2.jpg" >
+                        </div>
+                        <div class="item">
+                            <img src="images/content-1-roll3.jpg" >
+                        </div>
+                        <div class="item">
+                            <img src="images/content-1-roll4.jpg" >
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a style="margin-top: 110px;" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a style="margin-top: 110px;" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top: 15px;width:150px;">
+                        <img style="width:260px;" src="images/content-1-9.jpg"/>
+                        <div style="width:260px;color:snow;position:relative;top:-18px;background: #405653;">手花--马天宇</div>
+                    </div>
+                    <div class="col-md-12 text-center" style="">
+                        <div style="width:260px;margin-top:-18px;height:30px;line-height:30px;color:snow;background: #666;font-weight: bold;">每日一听</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 5px;">
+            <div class="col-md-9">
+
+                <!-- 内容2-1-->
+                <div class="col-md-4" style="padding:0;">
+                    <ul class="nav nav-tabs" style="font-size:12px;background:#D7F0F9;border:1px solid #D7F0F9;">
+                        <li style="" role="presentation"><a href="#" style="font-weight: bold;color:#122b40;">新歌推荐</a></li>
+                        <li style="" role="presentation" class="active"><a href="#tab21" data-toggle="tab">华语</a></li>
+                        <li  style="" role="presentation"><a href="#tab22" data-toggle="tab">欧美</a></li>
+                        <li  style="" role="presentation"><a href="#tab23" data-toggle="tab">日韩</a></li>
+                    </ul>
+                    <div class="tab-content content21" style="border:1px solid #D7F0F9;font-size:12px;border-radius:0 0 10px 10px; ">
+                        <div class="tab-pane active" id="tab21" >
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="" >
+                                    <a href="#">留言 (我爱你版)</a> -
+                                    <a href="#" >陆虎</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">撕</a> -
+                                    <a href="#" >蔡素珊</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">吹牛皮</a> -
+                                    <a href="#" >  耀乐团</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">Just You </a> -
+                                    <a href="#" > Ume Band</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">最初所愿</a> -
+                                    <a href="#" >王旭鹏</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">奴隶 </a> -
+                                    <a href="#" >安来宁</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">爱隔着心</a> -
+                                    <a href="#" >范小倩</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">心电感应808</a> -
+                                    <a href="#" >张靓颖</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">等待你出现</a> -
+                                    <a href="#" >小野丽莎</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">看</a> -
+                                    <a href="#" >Rella</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">借根烟 (电视《左耳》主题曲)</a> -
+                                    <a href="#" >齐秦</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">破晓</a> -
+                                    <a href="#" >朱克</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">爱上火柴的香烟</a> -
+                                    <a href="#" >龙雨</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">手花</a> -
+                                    <a href="#" >马天宇</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">明明白白我的心2016</a> -
+                                    <a href="#" >成龙&魏允熙</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">答案就是自己</a> -
+                                    <a href="#">8911</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">红玫</a> -
+                                    <a href="#" >米茄子Eggplant</a>
+                                </label>
+                            </div>
+                            <button id="choose1" style="margin: 0 10px 0 20px;" type="button" class="btn btn-info btn-sm">全选</button>
+                            <button style="margin-right: 10px;"type="button" class="btn btn-warning btn-sm">播放</button>
+                            <button type="button" class="btn btn-success btn-sm">加入列表</button>
+                        </div>
+                        <div class="tab-pane" id="tab22">2</div>
+                        <div class="tab-pane" id="tab23">3</div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding:0;" >
+                    <ul class="nav nav-tabs" style="font-size:12px;background:#D7F0F9;border-left:1px solid #B2D0EA;">
+                        <li style="width: 150px;" role="presentation"><a href="#" style="font-weight: bold;color:#122b40;">热门歌曲</a></li>
+                        <li style="" role="presentation" class="active"><a href="#tab221" data-toggle="tab">日韩</a></li>
+                        <li role="presentation"><a href="#tab222" data-toggle="tab">周榜 </a></li>
+                    </ul>
+                    <div class="tab-content content21" style="border-bottom:1px solid #D7F0F9;font-size:12px;border-radius:0 0 10px 10px; ">
+                        <div class="tab-pane active" id="tab221" >
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="" >
+                                    <a href="#">留言 (我爱你版)</a> -
+                                    <a href="#" >陆虎</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">撕</a> -
+                                    <a href="#" >蔡素珊</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">吹牛皮</a> -
+                                    <a href="#" >  耀乐团</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">Just You </a> -
+                                    <a href="#" > Ume Band</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">最初所愿</a> -
+                                    <a href="#" >王旭鹏</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">奴隶 </a> -
+                                    <a href="#" >安来宁</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">爱隔着心</a> -
+                                    <a href="#" >范小倩</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">心电感应808</a> -
+                                    <a href="#" >张靓颖</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">等待你出现</a> -
+                                    <a href="#" >小野丽莎</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">看</a> -
+                                    <a href="#" >Rella</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">借根烟 (电视《左耳》主题曲)</a> -
+                                    <a href="#" >齐秦</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">破晓</a> -
+                                    <a href="#" >朱克</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">爱上火柴的香烟</a> -
+                                    <a href="#" >龙雨</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">手花</a> -
+                                    <a href="#" >马天宇</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">明明白白我的心2016</a> -
+                                    <a href="#" >成龙&魏允熙</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">答案就是自己</a> -
+                                    <a href="#">8911</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">红玫</a> -
+                                    <a href="#" >米茄子Eggplant</a>
+                                </label>
+                            </div>
+                            <button id="choose2" style="margin: 0 10px 0 20px;" type="button" class="btn btn-info btn-sm">全选</button>
+                            <button style="margin-right: 10px;"type="button" class="btn btn-warning btn-sm">播放</button>
+                            <button type="button" class="btn btn-success btn-sm">加入列表</button>
+                        </div>
+                        <div class="tab-pane" id="tab222">2</div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding:0;">
+                    <ul class="nav nav-tabs" style="font-size:12px;background:#D7F0F9;border-left:1px solid #B2D0EA;">
+                        <li style="width: 175px;" role="presentation"><a href="#" style="font-weight: bold;color:#122b40;">独家&首发(试运营)</a></li>
+                        <li style="" role="presentation" class="active"><a href="#tab231" data-toggle="tab">合作</a></li>
+
+                    </ul>
+                    <div class="tab-content content21" style="border:1px solid #D7F0F9;font-size:12px;border-radius:0 0 10px 10px; ">
+                        <div class="tab-pane active" id="tab231" >
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="" >
+                                    <a href="#">留言 (我爱你版)</a> -
+                                    <a href="#" >陆虎</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">撕</a> -
+                                    <a href="#" >蔡素珊</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">吹牛皮</a> -
+                                    <a href="#" >  耀乐团</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">Just You </a> -
+                                    <a href="#" > Ume Band</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">最初所愿</a> -
+                                    <a href="#" >王旭鹏</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">奴隶 </a> -
+                                    <a href="#" >安来宁</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">爱隔着心</a> -
+                                    <a href="#" >范小倩</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">心电感应808</a> -
+                                    <a href="#" >张靓颖</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">等待你出现</a> -
+                                    <a href="#" >小野丽莎</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">看</a> -
+                                    <a href="#" >Rella</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">借根烟 (电视《左耳》主题曲)</a> -
+                                    <a href="#" >齐秦</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">破晓</a> -
+                                    <a href="#" >朱克</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">爱上火柴的香烟</a> -
+                                    <a href="#" >龙雨</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">手花</a> -
+                                    <a href="#" >马天宇</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">明明白白我的心2016</a> -
+                                    <a href="#" >成龙&魏允熙</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">答案就是自己</a> -
+                                    <a href="#">8911</a>
+                                </label>
+                            </div>
+                            <div class="checkbox" style="">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <a href="#">红玫</a> -
+                                    <a href="#" >米茄子Eggplant</a>
+                                </label>
+                            </div>
+                            <button id="choose3" style="margin: 0 10px 0 20px;" type="button" class="btn btn-info btn-sm">全选</button>
+                            <button style="margin-right: 10px;"type="button" class="btn btn-warning btn-sm">播放</button>
+                            <button type="button" class="btn btn-success btn-sm">加入列表</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 start" style="margin-top:5px;border:1px solid darkgrey;">
+                        <img style="width: 100%;" src="images/content-2-7.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <!-- 内容2-2-->
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs" style="font-size:12px;background:#FFAC4E;border:1px solid #FFAC4E;">
+                            <li role="presentation"><a href="#" style="font-weight: bold;color:snow;">热门歌手</a></li>
+                            <li style="width:59px;" role="presentation" class="active"><a href="#tab241" data-toggle="tab">华语</a></li>
+                            <li style="width:59px;" role="presentation"><a href="#tab242" data-toggle="tab">欧美</a></li>
+                            <!--<li style="width:59px;" role="presentation"><a href="#tab243" data-toggle="tab">日韩</a></li>-->
+                        </ul>
+                        <div class="tab-content content21  content24" style="padding:0;height:400px;border:1px solid #FFAC4E;font-size:12px;border-radius:0 0 10px 10px; ">
+                            <div class="tab-pane text-center active " id="tab241"  >
+                                <img src="images/content-2-1.jpg"/>
+                                <img src="images/content-2-2.jpg"/>
+                                <img src="images/content-2-3.jpg"/>
+                                <img src="images/content-2-4.jpg"/>
+                                <img src="images/content-2-5.jpg"/>
+                                <img src="images/content-2-6.jpg"/>
+                                <br/>
+                                <div class="row" >
+                                   <p >
+                                       <small>陈楚生</small>
+                                       <small>斯琴高丽</small>
+                                       <small>邓紫棋</small>
+                                   </p>
+                                    <p>
+                                        <small>孙楠</small>
+                                        <small>姜鹏</small>
+                                        <small>韩红</small>
+                                    </p>
+                                    <p>
+                                        <small>小虎队</small>
+                                        <small>王力宏</small>
+                                        <small>费玉清</small>
+                                    </p>
+                                    <p>
+                                        <small>迪克牛仔</small>
+                                        <small>张信哲</small>
+                                        <small>邓丽君</small>
+                                    </p>
+                                    <p>
+                                        <small>周笔畅</small>
+                                        <small>梁静茹</small>
+                                        <small>凤凰传奇</small>
+                                    </p>
+                                    <p>
+                                        <small>蔡琴</small>
+                                        <small>刘欢</small>
+                                        <small>张雨生</small>
+                                    </p>
+                                    <p>
+                                        <small>刘若英</small>
+                                        <small>S.H.E</small>
+                                        <small>林俊杰</small>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab242">2</div>
+                            <div class="tab-pane" id="tab243">3</div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="margin-top: 6px;">
+                        <p style="border:1px solid #D7F0F9;height:30px;line-height:30px;font-weight: bold;background: #F8FBFF;">
+                            <small >精彩专题</small>
+                        </p>
+                        <div style="border:1px solid #D7F0F9;">
+                            <img style="width:100%;margin-top:-15px;" src="images/content-2-8.jpg"/>
+                            <small><a href="#">2015孙楠[乐在其中北京演唱会]</a><br/></small>
+                            <small><a href="#">2015孙楠[乐在其中北京演唱会]</a><br/></small>
+                            <small><a href="#">2015孙楠[乐在其中北京演唱会]</a><br/></small>
+                            <small><a href="#">2015孙楠[乐在其中北京演唱会]</a><br/></small>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       <!-- 内容3-->
+        <div class="row " style="margin-top: 5px;">
+            <div class="col-md-9 " >
+                <div class="col-md-4 start content3" style="border:1px solid #D7F0F9;">
+                    <p style=""><strong style="margin-left:20px;">会员推荐</strong> <a style="margin-left:150px;" href="#">更多</a> </p>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="" >
+                            <a href="#">留言 (我爱你版)</a> -
+                            <a href="#" >陆虎</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">撕</a> -
+                            <a href="#" >蔡素珊</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">吹牛皮</a> -
+                            <a href="#" >  耀乐团</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">Just You </a> -
+                            <a href="#" > Ume Band</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">最初所愿</a> -
+                            <a href="#" >王旭鹏</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">奴隶 </a> -
+                            <a href="#" >安来宁</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">爱隔着心</a> -
+                            <a href="#" >范小倩</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">心电感应808</a> -
+                            <a href="#" >张靓颖</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">等待你出现</a> -
+                            <a href="#" >小野丽莎</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">看</a> -
+                            <a href="#" >Rella</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">借根烟 (电视《左耳》主题曲)</a> -
+                            <a href="#" >齐秦</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">破晓</a> -
+                            <a href="#" >朱克</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">爱上火柴的香烟</a> -
+                            <a href="#" >龙雨</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">手花</a> -
+                            <a href="#" >马天宇</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">明明白白我的心2016</a> -
+                            <a href="#" >成龙&魏允熙</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">答案就是自己</a> -
+                            <a href="#">8911</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">红玫</a> -
+                            <a href="#" >米茄子Eggplant</a>
+                        </label>
+                    </div>
+                    <button  style="margin: 0 10px 0 20px;" type="button" class="btn btn-info btn-sm">全选</button>
+                    <button style="margin-right: 10px;"type="button" class="btn btn-warning btn-sm">播放</button>
+                    <button type="button" class="btn btn-success btn-sm">加入列表</button>
+                </div>
+                <div class="col-md-4 start content3" style="border-bottom:1px solid #D7F0F9;">
+                    <p style=""><strong style="margin-left:20px;">DJ舞曲</strong> <a style="margin-left:150px;" href="#">更多</a> </p>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="" >
+                            <a href="#">留言 (我爱你版)</a> -
+                            <a href="#" >陆虎</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">撕</a> -
+                            <a href="#" >蔡素珊</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">吹牛皮</a> -
+                            <a href="#" >  耀乐团</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">Just You </a> -
+                            <a href="#" > Ume Band</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">最初所愿</a> -
+                            <a href="#" >王旭鹏</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">奴隶 </a> -
+                            <a href="#" >安来宁</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">爱隔着心</a> -
+                            <a href="#" >范小倩</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">心电感应808</a> -
+                            <a href="#" >张靓颖</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">等待你出现</a> -
+                            <a href="#" >小野丽莎</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">看</a> -
+                            <a href="#" >Rella</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">借根烟 (电视《左耳》主题曲)</a> -
+                            <a href="#" >齐秦</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">破晓</a> -
+                            <a href="#" >朱克</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">爱上火柴的香烟</a> -
+                            <a href="#" >龙雨</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">手花</a> -
+                            <a href="#" >马天宇</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">明明白白我的心2016</a> -
+                            <a href="#" >成龙&魏允熙</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">答案就是自己</a> -
+                            <a href="#">8911</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">红玫</a> -
+                            <a href="#" >米茄子Eggplant</a>
+                        </label>
+                    </div>
+                    <button  style="margin: 0 10px 0 20px;" type="button" class="btn btn-info btn-sm">全选</button>
+                    <button style="margin-right: 10px;"type="button" class="btn btn-warning btn-sm">播放</button>
+                    <button type="button" class="btn btn-success btn-sm">加入列表</button>
+                </div>
+                <div class="col-md-4 start content3" style="border:1px solid #D7F0F9;">
+                    <p style=""><strong style="margin-left:20px;">新媒体流行</strong> <a style="margin-left:150px;" href="#">更多</a> </p>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="" >
+                            <a href="#">留言 (我爱你版)</a> -
+                            <a href="#" >陆虎</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">撕</a> -
+                            <a href="#" >蔡素珊</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">吹牛皮</a> -
+                            <a href="#" >  耀乐团</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">Just You </a> -
+                            <a href="#" > Ume Band</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">最初所愿</a> -
+                            <a href="#" >王旭鹏</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">奴隶 </a> -
+                            <a href="#" >安来宁</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">爱隔着心</a> -
+                            <a href="#" >范小倩</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">心电感应808</a> -
+                            <a href="#" >张靓颖</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">等待你出现</a> -
+                            <a href="#" >小野丽莎</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">看</a> -
+                            <a href="#" >Rella</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">借根烟 (电视《左耳》主题曲)</a> -
+                            <a href="#" >齐秦</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">破晓</a> -
+                            <a href="#" >朱克</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">爱上火柴的香烟</a> -
+                            <a href="#" >龙雨</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">手花</a> -
+                            <a href="#" >马天宇</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">明明白白我的心2016</a> -
+                            <a href="#" >成龙&魏允熙</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">答案就是自己</a> -
+                            <a href="#">8911</a>
+                        </label>
+                    </div>
+                    <div class="checkbox" style="">
+                        <label>
+                            <input type="checkbox" value="">
+                            <a href="#">红玫</a> -
+                            <a href="#" >米茄子Eggplant</a>
+                        </label>
+                    </div>
+                    <button  style="margin: 0 10px 0 20px;" type="button" class="btn btn-info btn-sm">全选</button>
+                    <button style="margin-right: 10px;"type="button" class="btn btn-warning btn-sm">播放</button>
+                    <button type="button" class="btn btn-success btn-sm">加入列表</button>
+                </div>
+            </div>
+            <div class="col-md-3 " style="border:1px solid #bce8f1;">
+               <div class="row" style="background: #F8FBFF;height: 38px;line-height: 38px;">
+                   <div class="col-md-6 " style="font-weight: bold;">热门专辑排行榜</div>
+                   <div class="col-md-6 text-right ">更多</div>
+               </div>
+                <div id="sbox">
+                    <div  style="">
+                        <img  class="show" align="left" src="images/content3-1.jpg"/>
+                        <span>1.</span>
+                        <a href="#" >等的不会是这位</a>
+                        <font class="active" style="color:#666666;font-size: 12px; ">高林生</font>
+                        <button type="button" class=" show btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-2.jpg"/>
+                        <span>2.</span>
+                        <a href="#" >最高的地方</a>
+                        <font style="color:#666666;font-size: 12px; ">林文荪</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-3.jpg"/>
+                        <span>3.</span>
+                        <a href="#" >永远也不想再行</a>
+                        <font style="color:#666666;font-size: 12px; ">杨海彪</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-4.jpg"/>
+                        <span>4.</span>
+                        <a href="#" >民歌王中王</a>
+                        <font style="color:#666666; font-size: 12px;">龚玥</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-5.jpg"/>
+                        <span>5.</span>
+                        <a href="#" >粤语珍藏版</a>
+                        <font style="color:#666666;font-size: 12px; ">张国荣</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-6.jpg"/>
+                        <span>6.</span>
+                        <a href="#" >初学者</a>
+                        <font style="color:#666666;font-size: 12px; ">薛之谦</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-7.jpg"/>
+                        <span>7.</span>
+                        <a href="#" >小水果（单曲）</a>
+                        <font style="color:#666666;font-size: 12px; ">筷子兄弟</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-8.jpg"/>
+                        <span>8.</span>
+                        <a href="#" >民歌绝版</a>
+                        <font style="color:#666666;font-size: 12px; ">中国民歌宝典</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-9.jpg"/>
+                        <span>9.</span>
+                        <a href="#" >请在哔声后留言</a>
+                        <font style="color:#666666;font-size: 12px; ">徐良</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-10.jpg"/>
+                        <span>10.</span>
+                        <a href="#" >红色经典</a>
+                        <font style="color:#666666;font-size: 12px; ">刀郎</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                    <div  style="">
+                        <img  class="hidden" align="left" src="images/content3-11.jpg"/>
+                        <span>11.</span>
+                        <a href="#" >民歌甜</a>
+                        <font style="color:#666666;font-size: 12px; ">红苹果</font>
+                        <button type="button" class=" hidden btn btn-warning btn-sm">整张播放</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content4-->
+        <div class="row" style="margin-top: 5px;border: 1px solid #B2D0EA; ">
+            <div class="col-md-6 start" style="height30px;line-height:30px;background: #EFF8FD;">
+               <strong>推荐曲风</strong>
+            </div>
+            <div class="col-md-6 start text-right" style="height30px;line-height:30px;background: #EFF8FD;">
+                <a href="#">更多></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 start content4" style="">
+
+                <ul style="float: left;">
+                    <li><a href="#">经典老歌 </a></li>
+                    <li><a href="#">军营歌曲</a></li>
+                    <li><a href="#">爵士</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">网络流行 </a></li>
+                    <li><a href="#">民谣</a></li>
+                    <li><a href="#">发烧音乐</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">佛教音乐 </a></li>
+                    <li><a href="#">现场演唱会</a></li>
+                    <li><a href="#">轻音乐</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">胎教音乐 </a></li>
+                    <li><a href="#">萨克斯</a></li>
+                    <li><a href="#">舞曲</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">流行 </a></li>
+                    <li><a href="#">民歌</a></li>
+                    <li><a href="#">嘻哈</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">DJ </a></li>
+                    <li><a href="#">韩国影视歌曲</a></li>
+                    <li><a href="#">迪士高</a></li>
+                </ul>
+                <ul style="float: left;">
+                    <li><a href="#">古典音乐 </a></li>
+                    <li><a href="#">有声读物</a></li>
+                    <li><a href="#">校园民谣</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">钢琴 </a></li>
+                    <li><a href="#">古筝</a></li>
+                    <li><a href="#">摇滚</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <!--友情链接-->
+        <div class="row" style="margin-top: 5px;border: 1px solid #B2D0EA; ">
+            <div class="col-md-6 start" style="height30px;line-height:30px;background: #EFF8FD;">
+                <strong>友情链接</strong>
+            </div>
+            <div class="col-md-6 start text-right" style="height30px;line-height:30px;background: #EFF8FD;">
+                <a href="#">更多></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 start content5" style="">
+
+                <ul style="">
+                    <li><a href="#">爱问音乐</a></li>
+                    <li><a href="#">房产</a></li>
+                    <li><a href="#">365音乐网</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">99广场舞 </a></li>
+                    <li><a href="#">QQ下载</a></li>
+                    <li><a href="#">看看新闻网</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">广场舞 </a></li>
+                    <li><a href="#">DJ</a></li>
+                    <li><a href="#">9酷音乐网</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">高清MV </a></li>
+                    <li><a href="#">可可西广场舞</a></li>
+                    <li><a href="#">网上书店</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">企鹅FM</a></li>
+                    <li><a href="#">壁纸</a></li>
+                    <li><a href="#">音乐酷我网</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">小说网 </a></li>
+                    <li><a href="#">站长之家</a></li>
+                    <li><a href="#">深港DJ舞曲</a></li>
+                </ul>
+                <ul style="float: left;">
+                    <li><a href="#">火影忍者 </a></li>
+                    <li><a href="#">戏曲大全</a></li>
+                    <li><a href="#">友链已满</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">绿色下载吧 </a></li>
+                    <li><a href="#">苹果游戏</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">手机网游 </a></li>
+                    <li><a href="#">叮当音乐网</a></li>
+                </ul>
+                <ul style="">
+                    <li><a href="#">天气预报 </a></li>
+                    <li><a href="#">音乐巴士</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 尾部-->
+        <div class="row" style="margin-top: 15px;border-top: 1px solid #B2D0EA;">
+            <div class="col-md-12 start text-center footer">
+               <a href="#">关于一听</a><span>|</span>
+                <a href="#">版权声明</a><span>|</span>
+                <a href="#">诚聘英才</a><span>|</span>
+                <a href="#">联系我们</a><span>|</span>
+                <a href="#">歌曲入库</a><span>|</span>
+                <a href="#">广告服务</a><span>|</span>
+                <a href="#">友情链接</a><span>|</span>
+                <a href="#">历史合作</a><span>|</span>
+                <a href="#">帮助中心</a>
+                <p>Copyright © 2003-2016<a id="company" href="#">北京易听信息技术有限公司</a>  版权所有</p>
+                <small>京ICP备11022602号 | 京ICP证080320号 | 京网文[2013]0296-062 | 京公网安备11010802020469号 | 中国网络正版音乐促进联盟创始会员 |</small>
+            </div>
+            <br/>
+        </div>
+    </div>
+</body>
+</html>
